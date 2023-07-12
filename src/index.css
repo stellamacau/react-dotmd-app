@@ -1,13 +1,91 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.markdown h1 {
+  @apply text-3xl font-bold mb-4 mt-8;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.markdown h2 {
+  @apply text-2xl font-bold mb-4 mt-8;
+}
+
+.markdown h3 {
+  @apply text-xl font-bold mb-4 mt-8;
+}
+
+.markdown h4 {
+  @apply text-lg font-bold mb-4 mt-8;
+}
+
+.markdown h5 {
+  @apply text-base font-bold mb-4 mt-8;
+}
+
+.markdown h6 {
+  @apply text-sm font-bold mb-4 mt-8;
+}
+
+.markdown p {
+  @apply mb-4;
+}
+
+.markdown a {
+  @apply text-blue-500 underline;
+}
+
+.markdown ul {
+  @apply list-disc list-inside mb-4;
+}
+
+.markdown ol {
+  @apply list-decimal list-inside mb-4;
+}
+
+.markdown li {
+  @apply mb-2;
+}
+
+.markdown blockquote {
+  @apply border-l-4 border-gray-300 pl-4 mb-4;
+}
+
+.markdown code {
+  @apply bg-gray-100 rounded p-1;
+}
+
+.markdown pre {
+  @apply bg-gray-100 rounded p-4 mb-4;
+}
+
+.markdown table {
+  @apply border-collapse border border-gray-300 mb-4;
+}
+
+.markdown table th {
+  @apply border border-gray-300 p-2;
+}
+
+.markdown table td {
+  @apply border border-gray-300 p-2;
+}
+
+.markdown table tr:nth-child(even) {
+  @apply bg-gray-100;
+}
+
+.markdown table tr:nth-child(odd) {
+  @apply bg-gray-200;
+}
+
+.markdown table tr:hover {
+  @apply bg-gray-300;
+}
+
+.markdown img {
+  @apply mx-auto mb-4;
+}
+
+.markdown hr {
+  @apply border-gray-300 border-t my-4;
 }
